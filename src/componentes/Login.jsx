@@ -34,14 +34,14 @@ const Login = () => {
 
   const handleForgotPassword = async () => {
     if (!email) {
-      setError('Por favor ingresa tu correo electrónico');
+      setError('Please enter your email');
       return;
     }
     try {
       await sendPasswordResetEmail(auth, email);
-      setMessage('Se ha enviado un enlace de recuperación a tu correo electrónico');
+      setMessage('A recovery link has been sent to your email');
     } catch (err) {
-      setError('Error al enviar el correo de recuperación: ' + err.message);
+      setError('Error sending recovery email: ' + err.message);
     }
   };
 
@@ -51,7 +51,7 @@ const Login = () => {
       <form onSubmit={handleLogin} className="login-form">
         <input
           type="email"
-          placeholder="Correo Electrónico"
+          placeholder="Email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
@@ -59,7 +59,7 @@ const Login = () => {
         />
         <input
           type="password"
-          placeholder="Contraseña"
+          placeholder="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required

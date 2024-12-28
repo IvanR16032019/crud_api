@@ -60,7 +60,7 @@ const Register = () => {
       // Mostrar SweetAlert y redirigir a login
       Swal.fire({
         icon: 'success',
-        title: 'Usuario registrado correctamente',
+        title: 'User registered successfully',
         showConfirmButton: false,
         timer: 2000 // Mostrar durante 2 segundos
       }).then(() => {
@@ -79,7 +79,7 @@ const Register = () => {
           className="register-input"
           type="text"
           name="name"
-          placeholder="Nombre"
+          placeholder="Name"
           value={formData.name}
           onChange={handleChange}
           required
@@ -88,7 +88,7 @@ const Register = () => {
           className="register-input"
           type="text"
           name="lastname"
-          placeholder="Apellido"
+          placeholder="Last name"
           value={formData.lastname}
           onChange={handleChange}
           required
@@ -97,7 +97,7 @@ const Register = () => {
           className="register-input"
           type="number"
           name="age"
-          placeholder="Edad"
+          placeholder="Age"
           value={formData.age}
           onChange={handleChange}
           required
@@ -106,7 +106,7 @@ const Register = () => {
           className="register-input"
           type="email"
           name="email"
-          placeholder="Correo Electrónico"
+          placeholder="Email"
           value={formData.email}
           onChange={handleChange}
           required
@@ -115,7 +115,7 @@ const Register = () => {
           className="register-input"
           type="password"
           name="password"
-          placeholder="Contraseña"
+          placeholder="Password"
           value={formData.password}
           onChange={handleChange}
           required
@@ -124,7 +124,7 @@ const Register = () => {
           className="register-input"
           type="password"
           name="confirmPassword"
-          placeholder="Confirmar Contraseña"
+          placeholder="Confirm Password"
           value={formData.confirmPassword}
           onChange={handleChange}
           required
