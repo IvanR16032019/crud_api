@@ -1,0 +1,106 @@
+/* Estilo general para el contenedor */
+.home-container {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #ffffff;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Animaciones suaves para h1 y h2 */
+  .animated-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+    animation: fadeInSlide 2s ease-in-out;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  .animated-subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    animation: fadeInSlide 2s ease-in-out 0.5s; /* Retraso en la animación */
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+    line-height: 1.6;
+  }
+  
+  /* Keyframes para las animaciones */
+  @keyframes fadeInSlide {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Estilo del botón de logout */
+  .logout-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    background-color: #ff5c5c;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logout-button:hover {
+    background-color: #ff1c1c;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilo del contenido principal */
+  .home-content {
+    text-align: center;
+    max-width: 600px;
+    margin-top: 50px;
+  }
+  
+  /* Botón de gestión de usuarios */
+  .manage-users-button {
+    padding: 15px 30px;
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .manage-users-button:hover {
+    background-color: #008c9e;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Fondo animado con partículas */
+  .home-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/dark-fabric.png');
+    opacity: 0.3;
+    z-index: -1;
+  }
+  

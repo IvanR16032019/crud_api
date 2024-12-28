@@ -1,0 +1,150 @@
+/* Fondo general */
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Encabezado */
+h1, h4 {
+  text-align: center;
+  color: #fff;
+}
+
+/* Card del formulario */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+/* Labels e inputs */
+label {
+  color: #f0f0f0;
+  margin-bottom: 10px; /* Despega el nombre de los inputs */
+  display: block; /* Asegura que las etiquetas estén en su propia línea */
+}
+
+.form-control {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Botones */
+.btn-primary {
+  background: #ff7b00;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background: #e36a00;
+}
+
+.btn-danger {
+  background: #ff4d4f;
+  border: none;
+}
+
+.btn-warning {
+  background: #ffd333;
+  border: none;
+}
+
+/* Tabla */
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%; /* Asegura que la tabla ocupe el ancho completo */
+  background-color: #f4f4f4; /* Fondo gris claro para toda la tabla */
+  border: 1px solid #ddd; /* Borde gris suave */
+}
+
+.table thead {
+  background: #333; /* Fondo gris oscuro para el encabezado */
+  color: #fff; /* Color blanco para el texto del encabezado */
+}
+
+.table-hover tbody tr:hover {
+  background: rgba(255, 255, 255, 0.1); /* Resalta las filas al pasar el mouse */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background: rgba(0, 0, 0, 0.05); /* Color gris suave alterno para filas impares */
+}
+
+.table td, .table th {
+  color: #333; /* Texto gris oscuro en celdas */
+  padding: 10px; /* Añade espacio dentro de las celdas */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.shadow {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Alinear inputs en una fila */
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form-group .form-control {
+  flex: 1;
+}
+
+/* Estilo para los encabezados de la tabla */
+.table th {
+  color: white; /* Color blanco para los encabezados */
+}
+
+/* Inputs deben estar alineados en una fila */
+.form-group .form-control {
+  width: 48%; /* Para que los inputs estén al lado del otro con un pequeño margen */
+}
+
+/* Diseño personalizado para btn btn-secondary */
+.btn-secondary {
+  background-color: #6c757d; /* Color de fondo gris */
+  color: white; /* Color del texto */
+  border: 2px solid #6c757d; /* Borde gris */
+  margin-left: 100px;
+  padding: 10px 20px; /* Relleno del botón */
+  border-radius: 25px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: 500; /* Grosor de fuente */
+  text-transform: uppercase; /* Convertir texto a mayúsculas */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268; /* Color de fondo más oscuro al pasar el ratón */
+  border-color: #5a6268; /* Borde más oscuro */
+  cursor: pointer; /* Cambiar cursor */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.btn-secondary:focus {
+  outline: none; /* Eliminar contorno al hacer clic */
+  box-shadow: 0 0 0 0.25rem rgba(108, 117, 125, 0.5); /* Resaltar el botón con un borde al enfocar */
+}
