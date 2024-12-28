@@ -4,8 +4,8 @@ import Login from './componentes/Login';
 import Home from './componentes/Home';
 import MainPage from './componentes/MainPage';
 import Users from './componentes/Users';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import PrivateRoute from './componentes/PrivateRoute';  // Importar el componente de protección de ruta
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // Cambiar a HashRouter
+import PrivateRoute from './componentes/PrivateRoute'; // Importar el componente de protección de ruta
 import './App.css';
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
             path="/home"
             element={
               <PrivateRoute>
-                <Home />  {/* Solo se renderiza si el usuario está autenticado */}
+                <Home /> {/* Solo se renderiza si el usuario está autenticado */}
               </PrivateRoute>
             }
           />
